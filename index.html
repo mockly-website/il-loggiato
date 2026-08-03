@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cocco &amp; Dessì — Ristorante e Pizzeria a Oristano dal 1925</title>
+<meta name="description" content="Dal 1925 nel cuore di Oristano. Cucina di mare e di terra, più di 40 pizze artigianali, cantina di vini sardi. Aperti a pranzo e cena, sette giorni su sette. Prenota: +39 0783 252648.">
+<meta name="theme-color" content="#f6efe1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f6efe1'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%23a34e22' font-family='Georgia,serif'%3EC%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Cocco &amp; Dessì — Ristorante e Pizzeria a Oristano dal 1925">
+<meta property="og:description" content="Dal 1925 nel cuore di Oristano. Cucina di mare e di terra, più di 40 pizze, vini sardi. Aperti 7 giorni su 7.">
+<meta property="og:image" content="img/interno2.jpg">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cocco & Dessì",
+  "image": "img/interno2.jpg",
+  "description": "Ristorante e pizzeria fondato nel 1925 nel centro storico di Oristano. Cucina di mare e di terra, oltre 40 pizze, cantina di vini sardi.",
+  "servesCuisine": ["Cucina sarda", "Cucina di mare", "Pizza", "Carne"],
+  "priceRange": "€€",
+  "telephone": "+39 0783 252648",
+  "email": "info@coccoedessi.it",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Tirso, 31",
+    "addressLocality": "Oristano",
+    "postalCode": "09170",
+    "addressRegion": "OR",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.9072, "longitude": 8.5887 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:30", "closes": "14:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "19:30", "closes": "23:00" }
+  ],
+  "url": "https://www.coccoedessi.it",
+  "sameAs": ["https://www.facebook.com/pages/Cocco-E-Dessi-Oristano/180852011960058"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>
+  .title-line > span, .hero__aside, .storia__wipe { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+</style></noscript>
+</head>
+<body class="preload">
+
+<!-- Overlay cinematografici -->
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="rail" aria-hidden="true">
+  <span class="rail__year">1925</span>
+  <div class="rail__line"><div class="rail__fill" id="railFill"></div></div>
+  <span class="rail__year rail__year--dim">2026</span>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span></div>
+
+<a class="skip-link" href="#contenuto">Salta al contenuto</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="logo" aria-label="Cocco e Dessì, torna all'inizio">
+      <img src="img/logo-white.png" alt="Logo Cocco e Dessì" class="logo__img">
+      <img src="img/logo-dark.png" alt="" class="logo__img logo__img--dark" aria-hidden="true">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigazione principale">
+      <ul class="nav__list">
+        <li><a href="#storia" class="nav__link">Storia</a></li>
+        <li><a href="#menu" class="nav__link">Menù</a></li>
+        <li><a href="#vini" class="nav__link">Vini</a></li>
+        <li><a href="#galleria" class="nav__link">Galleria</a></li>
+        <li><a href="#contatti" class="nav__link">Contatti</a></li>
+      </ul>
+      <a href="#contatti" class="btn btn--gold btn--small nav__prenota">Prenota</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Apri il menu">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="contenuto">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg" aria-hidden="true">
+      <img src="img/interno2.jpg" alt="" fetchpriority="high">
+      <div class="hero__scrim"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__kicker">Ristorante · Pizzeria — Oristano</p>
+
+      <h1 class="hero__title">
+        <span class="title-line"><span>Cocco</span></span>
+        <span class="title-line"><span><em>&amp;</em> Dessì</span></span>
+      </h1>
+
+      <div class="hero__aside">
+        <p class="hero__lead">
+          Dal 1925, a un soffio dalla Torre di San Cristoforo. Cucina di mare e di terra, più di quaranta pizze, i vini migliori dell'isola.
+        </p>
+        <div class="hero__actions">
+          <a href="#contatti" class="btn btn--gold">Prenota un tavolo</a>
+          <a href="#menu" class="btn btn--ghost">La carta <span class="btn__arrow">→</span></a>
+        </div>
+        <p class="hero__open"><span class="hero__open-dot"></span> Aperti 7 giorni su 7 · 12 mesi l'anno</p>
+      </div>
+
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <path id="stampCirc" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/>
+          </defs>
+          <text><textPath href="#stampCirc">DAL 1925 · CENTRO STORICO DI ORISTANO · DAL 1925 ·</textPath></text>
+        </svg>
+        <span class="stamp__core">1925</span>
+      </div>
+    </div>
+
+    <a href="#storia" class="hero__scroll" aria-label="Scorri verso il basso">
+      <span>Scorri</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee marquee--giant" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Cucina</span><i>✦</i>
+      <span class="marquee__word marquee__word--outline">Mare</span><i>✦</i>
+      <span class="marquee__word">Pizza</span><i>✦</i>
+      <span class="marquee__word marquee__word--outline">Vini sardi</span><i>✦</i>
+      <span class="marquee__word">Dal 1925</span><i>✦</i>
+      <span class="marquee__word marquee__word--outline">Cucina</span><i>✦</i>
+      <span class="marquee__word">Mare</span><i>✦</i>
+      <span class="marquee__word marquee__word--outline">Pizza</span><i>✦</i>
+      <span class="marquee__word">Vini sardi</span><i>✦</i>
+      <span class="marquee__word marquee__word--outline">Dal 1925</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ================= STORIA ================= -->
+  <section class="section storia" id="storia">
+    <span class="sec-tag" aria-hidden="true">01 — La storia</span>
+    <div class="container">
+      <div class="storia__intro">
+        <div class="storia__head">
+          <p class="eyebrow reveal">Un secolo di passione</p>
+          <h2 class="section__title reveal">Portiamo lo stesso nome dei soci che nel <em>1925</em> lo crearono.</h2>
+        </div>
+        <div class="storia__copy">
+          <p class="reveal">
+            Dal 1929 la nostra casa è <strong>Palazzo Falchi</strong>, elegante palazzo liberty ristrutturato a pochi passi da Piazza Roma, con sale riservate e l'ampio gazebo del cortile interno. Per noi la ristorazione non è un lavoro: è un'arte che portiamo avanti con serietà e dedizione, riconosciuta dall'Accademia Italiana della Cucina.
+          </p>
+          <p class="reveal">
+            In cucina lo Chef <strong>Valentino Simbula</strong> e il Secondo Chef <strong>Stefano Aresu</strong>; al forno i pizzaioli <strong>Maurizio Firinu</strong> e <strong>Alessandro Scanu</strong>. Pane e pasta artigianali, fatti ogni giorno da noi.
+          </p>
+        </div>
+      </div>
+
+      <div class="storia__years">
+        <div class="storia__year reveal">
+          <span class="storia__year-num">1925</span>
+          <p>I soci Cocco e Dessì fondano il ristorante nell'edificio della famiglia Colonna, in Via Tirso.</p>
+        </div>
+        <div class="storia__year reveal">
+          <span class="storia__year-num">1929</span>
+          <p>L'ingresso a Palazzo Falchi: sale liberty, gazebo nel cortile interno, ospiti da tutta l'isola.</p>
+        </div>
+        <div class="storia__year reveal">
+          <span class="storia__year-num">Oggi</span>
+          <p>La gestione Firinu &amp; Falchi porta avanti la tradizione, tra pesce del mercato locale e pizze artigianali.</p>
+        </div>
+      </div>
+
+      <figure class="storia__wipe reveal">
+        <img src="img/interno1.jpg" alt="La sala raffinata del ristorante Cocco e Dessì" loading="lazy">
+        <figcaption>Palazzo Falchi — Via Tirso 31, Oristano</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= MENÙ ================= -->
+  <section class="section menu" id="menu">
+    <span class="sec-tag" aria-hidden="true">02 — La carta</span>
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">La carta</p>
+        <h2 class="section__title reveal">Gustosa e <em>diversificata</em></h2>
+        <p class="section__lead reveal">Antipasti, primi e secondi di mare, carne e verdure, dolci della tradizione e più di quaranta pizze. Il pane e la pasta sono fatti in casa, ogni giorno.</p>
+      </div>
+
+      <div class="carte" id="carte">
+
+        <div class="carte__item is-open">
+          <button class="carte__head" aria-expanded="true">
+            <span class="carte__num">01</span>
+            <span class="carte__name">Antipasti</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Tentacoli di polpo croccanti con indivia riccia fritta, su vellutata di patate</span></li>
+                <li class="reveal"><span class="dish-list__name">Zuppetta di cozze e arselle servita con crostoni caserecci</span></li>
+                <li class="reveal"><span class="dish-list__name">Il misto mare</span></li>
+                <li class="reveal"><span class="dish-list__name">Crema calda di cozze al profumo di zafferano di San Gavino e pan tostato</span></li>
+                <li class="reveal"><span class="dish-list__name">Ceviche di spigola con patate americane, avocado e quinoa</span></li>
+                <li class="reveal"><span class="dish-list__name">Tartare di gambero, burrata, pomodorini confit e pistacchio</span></li>
+                <li class="reveal"><span class="dish-list__name">Capesante bardate con pancetta su crema di fagioli cannellini</span></li>
+                <li class="reveal"><span class="dish-list__name">La nostra insalata dei frutti del mare, in olio e limone</span></li>
+                <li class="reveal"><span class="dish-list__name">Caprese di mozzarella di bufala su misticanza e aceto balsamico</span></li>
+                <li class="reveal"><span class="dish-list__name">Tagliere di salumi e formaggi</span></li>
+                <li class="reveal"><span class="dish-list__name">Tartare di filetto di manzo con salsa all'uovo, cracker dolce e nocciola tostata</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte__item">
+          <button class="carte__head" aria-expanded="false">
+            <span class="carte__num">02</span>
+            <span class="carte__name">Primi piatti</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Linguine ai frutti di mare</span></li>
+                <li class="reveal"><span class="dish-list__name">Paccheri di Gragnano, gamberi rossi, crema di zucchine e menta</span></li>
+                <li class="reveal"><span class="dish-list__name">Spaghetti alle arselle</span></li>
+                <li class="reveal"><span class="dish-list__name">Fregola grossa al ragù di scorfano e sashimi di ricciola al lime</span></li>
+                <li class="reveal"><span class="dish-list__name">Riso carnaroli al profumo di mare</span></li>
+                <li class="reveal"><span class="dish-list__name">Tortelli con cuore di astice e patate viola, la sua bisque e gocce di burrata</span></li>
+                <li class="reveal"><span class="dish-list__name">Culurgiones di patate, menta e pecorino al pomodoro fresco e basilico</span></li>
+                <li class="reveal"><span class="dish-list__name">Lisangias fatte in casa, mantecate al parmigiano e tartufo bianchetto di Laconi</span></li>
+                <li class="reveal"><span class="dish-list__name">Maltagliati con bocconcino di maialino alla maggiorana, cardoncello e pomodorini confit</span></li>
+                <li class="reveal"><span class="dish-list__name">Cappellotti nero di seppia, ripieno seppia e patata, crema di piselli, burrata e bottarga</span></li>
+                <li class="reveal"><span class="dish-list__name">Penne a candela con gamberi rossi, pomodorini e carciofi al salto</span></li>
+                <li class="reveal"><span class="dish-list__name">Crema di polenta taragna, dabolata di porcino e guanciale</span></li>
+                <li class="reveal"><span class="dish-list__name">Tagliolino di pasta fresca al tartufo, mantecato al parmigiano</span></li>
+                <li class="reveal"><span class="dish-list__name">Ravioloni verdi con ripieno di broccoli su crema parmentier e salsiccia croccante</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte__item">
+          <button class="carte__head" aria-expanded="false">
+            <span class="carte__num">03</span>
+            <span class="carte__name">Dal mare</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Scampi e gamberi locali</span><span class="dish-list__note">all'etto</span></li>
+                <li class="reveal"><span class="dish-list__name">Astice locale</span><span class="dish-list__note">all'etto</span></li>
+                <li class="reveal"><span class="dish-list__name">Aragosta locale</span><span class="dish-list__note">all'etto</span></li>
+                <li class="reveal"><span class="dish-list__name">Filetto di spigola, crema allo zenzero, bietoline al salto e lenticchie al rosmarino</span></li>
+                <li class="reveal"><span class="dish-list__name">Rombo in guazzetto rosso, patate schiacciate e guanciale</span></li>
+                <li class="reveal"><span class="dish-list__name">Frittura mista di mare</span></li>
+                <li class="reveal"><span class="dish-list__name">Pezzo di tonno scottato su salsa di soia e miele, burrata e porri fritti</span></li>
+                <li class="reveal"><span class="dish-list__name">Grigliata mista di pesce</span></li>
+                <li class="reveal"><span class="dish-list__name">Il pescato locale</span><span class="dish-list__note">all'etto</span></li>
+              </ul>
+              <p class="dish-list__block reveal">Piatto da non perdere, per l'Accademia Italiana della Cucina: <strong>calamari freschi su crema di patate e crostone di pane all'extravergine d'oliva</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte__item">
+          <button class="carte__head" aria-expanded="false">
+            <span class="carte__num">04</span>
+            <span class="carte__name">La carne</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Pancia grossa di cavallo su fonduta di formaggio</span></li>
+                <li class="reveal"><span class="dish-list__name">Carré di agnello laccato alla senape e pistacchio, su crema di carciofi</span></li>
+                <li class="reveal"><span class="dish-list__name">Costata di manzo con tortino di patate</span></li>
+                <li class="reveal"><span class="dish-list__name">Filetto di manzo scaloppato con salsa al tartufo</span></li>
+              </ul>
+              <p class="dish-list__subtitle">Contorni</p>
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Patate chips</span></li>
+                <li class="reveal"><span class="dish-list__name">Patate al forno</span></li>
+                <li class="reveal"><span class="dish-list__name">Misticanza di verdure</span></li>
+                <li class="reveal"><span class="dish-list__name">Verdure al vapore</span></li>
+                <li class="reveal"><span class="dish-list__name">Verdure alla griglia</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte__item">
+          <button class="carte__head" aria-expanded="false">
+            <span class="carte__num">05</span>
+            <span class="carte__name">Le pizze</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <p class="dish-list__subtitle">Classiche</p>
+              <ul class="dish-list dish-list--cols">
+                <li class="reveal"><span class="dish-list__name">Margherita</span><span class="dish-list__note">pomodoro, mozzarella</span></li>
+                <li class="reveal"><span class="dish-list__name">Bufalina</span><span class="dish-list__note">pomodoro, mozzarella di bufala</span></li>
+                <li class="reveal"><span class="dish-list__name">Marinara</span><span class="dish-list__note">pomodoro, aglio, olio</span></li>
+                <li class="reveal"><span class="dish-list__name">Rustica</span><span class="dish-list__note">patate, pancetta, cipolle, rosmarino</span></li>
+                <li class="reveal"><span class="dish-list__name">Napoletana</span><span class="dish-list__note">acciughe, capperi, origano</span></li>
+                <li class="reveal"><span class="dish-list__name">Montiferru</span><span class="dish-list__note">salsiccia fresca, pecorino</span></li>
+                <li class="reveal"><span class="dish-list__name">Del pastore</span><span class="dish-list__note">salamino piccante, casitzolu</span></li>
+                <li class="reveal"><span class="dish-list__name">Eleonora</span><span class="dish-list__note">pere, gorgonzola, noci</span></li>
+                <li class="reveal"><span class="dish-list__name">Bruschetta</span><span class="dish-list__note">rucola, grana, bresaola</span></li>
+                <li class="reveal"><span class="dish-list__name">Funghi freschi</span><span class="dish-list__note">funghi prataioli</span></li>
+                <li class="reveal"><span class="dish-list__name">Sapori dell'orto</span><span class="dish-list__note">melanzane, zucchine, peperoni</span></li>
+                <li class="reveal"><span class="dish-list__name">Ruchetta</span><span class="dish-list__note">rucola, grana</span></li>
+              </ul>
+              <p class="dish-list__subtitle">Originali</p>
+              <ul class="dish-list dish-list--cols">
+                <li class="reveal"><span class="dish-list__name">Modesto</span><span class="dish-list__note">gorgonzola, funghi, bottarga</span></li>
+                <li class="reveal"><span class="dish-list__name">Nautilus</span><span class="dish-list__note">funghi, olive, pesce spada affumicato</span></li>
+                <li class="reveal"><span class="dish-list__name">Km 0</span><span class="dish-list__note">zucchine, caprino, pomodorini</span></li>
+                <li class="reveal"><span class="dish-list__name">Sinis</span><span class="dish-list__note">patate, grana, bottarga, rosmarino</span></li>
+                <li class="reveal"><span class="dish-list__name">Sardegna</span><span class="dish-list__note">cardoncello, casitzolu, guanciale</span></li>
+                <li class="reveal"><span class="dish-list__name">Regina</span><span class="dish-list__note">carciofi, pomodorini, grana, bottarga</span></li>
+                <li class="reveal"><span class="dish-list__name">Ichnusa</span><span class="dish-list__note">cardi, pomodori freschi e secchi</span></li>
+              </ul>
+              <p class="dish-list__subtitle">Il mare e la pizza</p>
+              <ul class="dish-list dish-list--cols">
+                <li class="reveal"><span class="dish-list__name">Frutti di mare</span><span class="dish-list__note">polpi, seppie, cozze, arselle, gamberi</span></li>
+                <li class="reveal"><span class="dish-list__name">Cocco &amp; Dessì</span><span class="dish-list__note">frutti di mare, salmone, bottarga</span></li>
+                <li class="reveal"><span class="dish-list__name">Shardana</span><span class="dish-list__note">crema di bottarga, gamberi</span></li>
+                <li class="reveal"><span class="dish-list__name">Brezza marina</span><span class="dish-list__note">salmone, gamberi, panna, pomodorini</span></li>
+              </ul>
+              <p class="dish-list__subtitle">Calzoni e focacce</p>
+              <ul class="dish-list dish-list--cols">
+                <li class="reveal"><span class="dish-list__name">Calzone classico</span><span class="dish-list__note">prosciutto cotto, funghi trifolati</span></li>
+                <li class="reveal"><span class="dish-list__name">Calzone Modesto</span><span class="dish-list__note">quattro formaggi, prosciutto</span></li>
+                <li class="reveal"><span class="dish-list__name">Focaccia carciofi e speck</span><span class="dish-list__note">carciofi freschi, speck</span></li>
+                <li class="reveal"><span class="dish-list__name">Focaccia Emiliana</span><span class="dish-list__note">mortadella, burrata, pistacchio</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte__item">
+          <button class="carte__head" aria-expanded="false">
+            <span class="carte__num">06</span>
+            <span class="carte__name">Dolci</span>
+            <span class="carte__plus" aria-hidden="true"></span>
+          </button>
+          <div class="carte__panel">
+            <div class="carte__panel-inner">
+              <ul class="dish-list">
+                <li class="reveal"><span class="dish-list__name">Tortino al cioccolato caldo su morbida crema inglese con gelato mantecato</span></li>
+                <li class="reveal"><span class="dish-list__name">Sfogliatina con crema chantilly e piccoli frutti di bosco</span></li>
+                <li class="reveal"><span class="dish-list__name">Seadas con miele agli agrumi</span></li>
+                <li class="reveal"><span class="dish-list__name">Panna cotta al tè e caramello alla menta</span></li>
+                <li class="reveal"><span class="dish-list__name">Coppa zabaione</span></li>
+                <li class="reveal"><span class="dish-list__name">Coppa cheesecake</span></li>
+                <li class="reveal"><span class="dish-list__name">Mousse vegana</span></li>
+                <li class="reveal"><span class="dish-list__name">Crème caramel all'arancia con croccante di nocciole e cioccolato</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="carte__footnote reveal">Le pizze sono preparate con impasto a lunga lievitazione. Per intolleranze o allergie, il personale di sala è a vostra disposizione.</p>
+    </div>
+  </section>
+
+  <!-- ================= VINI ================= -->
+  <section class="section vini" id="vini">
+    <span class="sec-tag" aria-hidden="true">03 — I vini</span>
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">Carta dei vini</p>
+        <h2 class="section__title reveal">Una cantina <em>da esplorare</em></h2>
+        <p class="section__lead reveal">Le migliori produzioni delle cantine della Sardegna e non solo: dalla Vernaccia di Oristano al Cannonau, dal Carignano del Sulcis al Vermentino di Gallura. Sfoglia la selezione per categoria.</p>
+      </div>
+
+      <div class="wine-browser reveal">
+        <div class="wine-tabs" role="tablist" aria-label="Categorie di vini">
+          <button class="wine-tab is-active" role="tab" id="wtab-rossi" aria-selected="true" aria-controls="wgroup-rossi" data-wgroup="rossi">Rossi</button>
+          <button class="wine-tab" role="tab" id="wtab-bianchi" aria-selected="false" aria-controls="wgroup-bianchi" data-wgroup="bianchi">Bianchi</button>
+          <button class="wine-tab" role="tab" id="wtab-rosati" aria-selected="false" aria-controls="wgroup-rosati" data-wgroup="rosati">Rosati &amp; Vernaccia</button>
+        </div>
+
+        <ul class="wine-group is-active" role="tabpanel" id="wgroup-rossi" aria-labelledby="wtab-rossi">
+          <li><span class="wine-item"><b>Corash</b><em>Cannonau di Sardegna DOC Riserva</em></span><span class="wine-cantina">Cantina della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Maimone</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Cantina della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Monti Prama</b><em>Nieddera IGT Valle del Tirso</em></span><span class="wine-cantina">Cantina della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Maluentu</b><em>Nieddera IGT Valle del Tirso</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Sartiglia</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Rocca Rubia</b><em>Carignano del Sulcis DOC Riserva</em></span><span class="wine-cantina">Cantine Santadi</span></li>
+          <li><span class="wine-item"><b>Terre Brune</b><em>Carignano del Sulcis DOC Superiore</em></span><span class="wine-cantina">Cantine Santadi</span></li>
+          <li><span class="wine-item"><b>Costera</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Argiolas</span></li>
+          <li><span class="wine-item"><b>Turriga</b><em>IGT Isola dei Nuraghi</em></span><span class="wine-cantina">Argiolas</span></li>
+          <li><span class="wine-item"><b>Buio Buio</b><em>Carignano del Sulcis DOC Riserva</em></span><span class="wine-cantina">Cantina Mesa</span></li>
+          <li><span class="wine-item"><b>Capichera Lianti</b><em>Carignano IGT Isola dei Nuraghi</em></span><span class="wine-cantina">Capichera</span></li>
+          <li><span class="wine-item"><b>Nepente di Oliena</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Cantina di Oliena</span></li>
+          <li><span class="wine-item"><b>Mamuthone</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Sedilesu</span></li>
+          <li><span class="wine-item"><b>Kiri</b><em>Cannonau di Sardegna DOC</em></span><span class="wine-cantina">Cantina del Vermentino di Monti</span></li>
+        </ul>
+
+        <ul class="wine-group" role="tabpanel" id="wgroup-bianchi" aria-labelledby="wtab-bianchi" hidden>
+          <li><span class="wine-item"><b>Benas</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Cantine della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Is Arutas</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Cantine della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Terre Sinis</b><em>IGT Valle del Tirso Bianco</em></span><span class="wine-cantina">Cantine della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Karmis Cuvée</b><em>IGT Tharros Bianco</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Mamaioa</b><em>Vermentino biologico IGT</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Tyrsos</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Puisteris</b><em>Semidano di Mogoro DOC Superiore</em></span><span class="wine-cantina">Cantina Il Nuraghe</span></li>
+          <li><span class="wine-item"><b>Costamolino</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Argiolas</span></li>
+          <li><span class="wine-item"><b>Stellato</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Cantina Pala</span></li>
+          <li><span class="wine-item"><b>Aghiloja</b><em>Vermentino di Gallura DOCG Superiore</em></span><span class="wine-cantina">Cantina del Vermentino di Monti</span></li>
+          <li><span class="wine-item"><b>Funtanaliras Oro</b><em>Vermentino di Gallura DOCG</em></span><span class="wine-cantina">Cantina del Vermentino di Monti</span></li>
+          <li><span class="wine-item"><b>Canayli</b><em>Vermentino di Gallura DOCG Superiore</em></span><span class="wine-cantina">Cantina Sociale della Gallura</span></li>
+          <li><span class="wine-item"><b>Ruinas</b><em>Vermentino IGT Colli del Limbara</em></span><span class="wine-cantina">Depperu</span></li>
+          <li><span class="wine-item"><b>Branu</b><em>Vermentino di Gallura DOCG</em></span><span class="wine-cantina">Surrau</span></li>
+          <li><span class="wine-item"><b>Capichera Vigna'ngena</b><em>Vermentino di Gallura DOCG</em></span><span class="wine-cantina">Capichera</span></li>
+          <li><span class="wine-item"><b>Indolente</b><em>Vermentino di Sardegna DOC</em></span><span class="wine-cantina">Tenuta Asinara</span></li>
+        </ul>
+
+        <ul class="wine-group" role="tabpanel" id="wgroup-rosati" aria-labelledby="wtab-rosati" hidden>
+          <li><span class="wine-item"><b>Seu</b><em>Rosato</em></span><span class="wine-cantina">Cantina della Vernaccia</span></li>
+          <li><span class="wine-item"><b>Nieddera Rosè</b><em>Rosato</em></span><span class="wine-cantina">Cantina Contini</span></li>
+          <li><span class="wine-item"><b>Filieri Rosato</b><em>Rosato</em></span><span class="wine-cantina">Cantina di Dorgali</span></li>
+          <li><span class="wine-item"><b>Rosè di Alghero</b><em>Rosato</em></span><span class="wine-cantina">Tenuta Sella &amp; Mosca</span></li>
+          <li><span class="wine-item"><b>Vernaccia di Oristano</b><em>la DOC di casa</em></span><span class="wine-cantina">Oristano</span></li>
+        </ul>
+      </div>
+
+      <p class="vini__footnote reveal">La carta completa — inclusi spumanti, Champagne e vini da dessert — è disponibile in sala e al calice ogni sera.</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERIA ================= -->
+  <section class="section galleria" id="galleria">
+    <span class="sec-tag" aria-hidden="true">04 — Galleria</span>
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">La pellicola</p>
+        <h2 class="section__title reveal">Un giro tra <em>i tavoli</em></h2>
+        <p class="section__lead reveal">Trascinate la pellicola per scorrere tra le sale e i piatti del nostro ristorante. Clicca su un fotogramma per ingrandirlo.</p>
+      </div>
+    </div>
+
+    <div class="film" id="film" tabindex="0" aria-label="Galleria di immagini, scorri orizzontalmente">
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: sala interna del ristorante">
+        <img src="img/galleria1.jpg" alt="Sala interna del ristorante Cocco e Dessì" loading="lazy">
+        <figcaption>La sala interna</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: tavoli apparecchiati">
+        <img src="img/galleria2.jpg" alt="Tavoli apparecchiati nel ristorante" loading="lazy">
+        <figcaption>Tavoli apparecchiati</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: particolari liberty">
+        <img src="img/galleria3.jpg" alt="Particolare degli ambienti liberty" loading="lazy">
+        <figcaption>Liberty d'epoca</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: la sala principale">
+        <img src="img/galleria4.jpg" alt="La sala principale vista dall'ingresso" loading="lazy">
+        <figcaption>La sala principale</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: dettagli dell'arredamento">
+        <img src="img/galleria5.jpg" alt="Dettagli dell'arredamento" loading="lazy">
+        <figcaption>Dettagli d'arredamento</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: il gazebo del cortile">
+        <img src="img/galleria6.jpg" alt="Il gazebo nel cortile interno" loading="lazy">
+        <figcaption>Il gazebo del cortile</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: angolo liberty">
+        <img src="img/galleria7.jpg" alt="Angolo di sala con palazzo liberty" loading="lazy">
+        <figcaption>Angolo liberty</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: preparazione dei tavoli">
+        <img src="img/galleria8.jpg" alt="Preparazione dei tavoli per la cena" loading="lazy">
+        <figcaption>Preparazione serale</figcaption>
+      </figure>
+      <figure class="film__item" tabindex="0" role="button" aria-label="Ingrandisci: atmosfera serale">
+        <img src="img/galleria9.jpg" alt="Atmosfera serale del ristorante" loading="lazy">
+        <figcaption>Atmosfera serale</figcaption>
+      </figure>
+    </div>
+
+    <p class="film__hint" aria-hidden="true">← scorrere →</p>
+  </section>
+
+  <!-- ================= RECENSIONI ================= -->
+  <section class="section recensioni" id="recensioni">
+    <div class="container container--narrow">
+      <p class="eyebrow reveal">Dicono di noi</p>
+      <h2 class="section__title reveal">Le vostre <em>parole</em></h2>
+
+      <div class="slider reveal" id="slider" aria-roledescription="carousel" aria-label="Recensioni dei clienti">
+        <div class="slider__quote" aria-hidden="true">“</div>
+        <div class="slider__viewport">
+          <div class="slider__track" id="sliderTrack">
+            <blockquote class="slider__slide">
+              <p class="slider__text">Non solo si pranza e si cena benissimo, ma è sempre come sentirsi a casa! Serviti, riveriti e coccolati! Ci sono persone speciali!</p>
+              <footer class="slider__author">Francesco Angioni <span>· Facebook</span></footer>
+            </blockquote>
+            <blockquote class="slider__slide">
+              <p class="slider__text">Eccellente qualità e servizio, il tutto in un'atmosfera chic e accogliente.</p>
+              <footer class="slider__author">Gianluca Carta <span>· Facebook</span></footer>
+            </blockquote>
+            <blockquote class="slider__slide">
+              <p class="slider__text">Che dire? Complimenti per tutto: personale di sala meraviglioso, cucina ottima, prezzi onesti. Grazie.</p>
+              <footer class="slider__author">Roberta Di Blasio <span>· Facebook</span></footer>
+            </blockquote>
+            <blockquote class="slider__slide">
+              <p class="slider__text">È il luogo dove amiamo festeggiare i nostri momenti speciali! Ottima cucina e gentilezza.</p>
+              <footer class="slider__author">Mariangela Sanna <span>· Facebook</span></footer>
+            </blockquote>
+            <blockquote class="slider__slide">
+              <p class="slider__text">Arredi eleganti, senza presunzione. L'asso nella manica sono i piatti pensati sia per gli amanti della carne che del pesce. Pasta e pane artigianali: un vero tuffo nella tradizione culinaria locale.</p>
+              <footer class="slider__author">SardiniaNaTour <span>· Guida turistica</span></footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="slider__btn" id="sliderPrev" aria-label="Recensione precedente">‹</button>
+          <div class="slider__dots" id="sliderDots" role="tablist" aria-label="Seleziona recensione"></div>
+          <button class="slider__btn" id="sliderNext" aria-label="Recensione successiva">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATTI ================= -->
+  <section class="section contatti" id="contatti">
+    <span class="sec-tag" aria-hidden="true">05 — Contatti</span>
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow reveal">Prenotazioni</p>
+        <h2 class="section__title reveal">Vi <em>aspettiamo</em></h2>
+        <p class="section__lead reveal">Sempre aperti a pranzo e cena, sette giorni su sette, dodici mesi l'anno. Il modo più veloce di prenotare è il telefono.</p>
+      </div>
+
+      <div class="contatti__grid">
+        <div class="contatti__info">
+          <div class="contatti__phone">
+            <a href="tel:+390783252648" class="contatti__phone-num">0783 252648</a>
+            <p class="contatti__phone-sub">+39 — una chiamata, tavolo confermato</p>
+          </div>
+
+          <ul class="info-list">
+            <li class="reveal">
+              <h3>Dove siamo</h3>
+              <p>Via Tirso, 31 — 09170 Oristano (OR)<br>
+              A pochi passi da Piazza Roma e dalla Torre di San Cristoforo.</p>
+            </li>
+            <li class="reveal">
+              <h3>Scriveteci</h3>
+              <p><a href="mailto:info@coccoedessi.it" class="link-phone">info@coccoedessi.it</a><br>
+              <a href="https://wa.me/393783252648" target="_blank" rel="noopener" class="link-phone">WhatsApp</a></p>
+            </li>
+            <li class="reveal">
+              <h3>Orari</h3>
+              <p>Pranzo 12.30 – 14.30<br>Cena 19.30 – 23.00<br><strong>Aperti 7 giorni su 7</strong></p>
+            </li>
+            <li class="reveal">
+              <h3>Ideale per</h3>
+              <p>Cene con i vostri cari, serate con gli amici, appuntamenti romantici, pranzi aziendali.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contatti__right">
+          <form class="form-card reveal" id="contactForm" novalidate>
+            <h3 class="form-card__title">Scrivici un messaggio</h3>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fNome">Nome *</label>
+                <input type="text" id="fNome" name="nome" required autocomplete="name" placeholder="Il tuo nome">
+              </div>
+              <div class="form-field">
+                <label for="fTelefono">Telefono</label>
+                <input type="tel" id="fTelefono" name="telefono" autocomplete="tel" placeholder="340 123 4567">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="fEmail">Email *</label>
+              <input type="email" id="fEmail" name="email" required autocomplete="email" placeholder="nome@esempio.it">
+            </div>
+            <div class="form-field">
+              <label for="fData">Giorno preferito (facoltativo)</label>
+              <input type="date" id="fData" name="data">
+            </div>
+            <div class="form-field">
+              <label for="fMessaggio">Messaggio *</label>
+              <textarea id="fMessaggio" name="messaggio" rows="5" required placeholder="Data, orario e numero di ospiti..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Invia richiesta</button>
+            <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contatti__map reveal">
+            <iframe title="Mappa: Cocco e Dessì, Via Tirso 31, Oristano" src="https://www.google.com/maps?q=Via%20Tirso%2031%2C%2009170%20Oristano%20OR&output=embed" width="100%" height="300" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__monogram" aria-hidden="true">C&amp;D</div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="img/logo-white.png" alt="Logo Cocco e Dessì" class="footer__logo">
+        <p class="footer__tag">Ristorante e pizzeria dal 1925<br>nel centro storico di Oristano.</p>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Esplora</h3>
+        <ul>
+          <li><a href="#storia">La nostra storia</a></li>
+          <li><a href="#menu">La carta</a></li>
+          <li><a href="#vini">Carta dei vini</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#contatti">Prenotazioni</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Contatti</h3>
+        <ul>
+          <li>Via Tirso, 31 — 09170 Oristano</li>
+          <li><a href="tel:+390783252648">+39 0783 252648</a></li>
+          <li><a href="mailto:info@coccoedessi.it">info@coccoedessi.it</a></li>
+          <li>Pranzo 12.30–14.30 · Cena 19.30–23.00</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Seguici</h3>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/pages/Cocco-E-Dessi-Oristano/180852011960058" target="_blank" rel="noopener" aria-label="Pagina Facebook di Cocco e Dessì">Facebook</a>
+          <a href="https://wa.me/393783252648" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">WhatsApp</a>
+          <a href="https://www.google.com/maps?q=Via%20Tirso%2031%2C%20Oristano" target="_blank" rel="noopener" aria-label="Scheda Google Maps di Cocco e Dessì">Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p>Cocco &amp; Dessì S.r.l. — REA OR 132475 — P.IVA IT01126930955 — Via Tirso, 31 · 09170 Oristano (OR)</p>
+      <p>© <span id="anno">2026</span> Cocco e Dessì. Tutti i diritti riservati.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Barra CTA mobile -->
+<div class="mob-bar">
+  <a href="tel:+390783252648" class="mob-bar__btn">Chiama</a>
+  <a href="#contatti" class="mob-bar__btn mob-bar__btn--gold">Prenota un tavolo</a>
+</div>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Torna in cima">↑</button>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Anteprima immagine" hidden>
+  <button class="lightbox__close" id="lightboxClose" aria-label="Chiudi">✕</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Immagine precedente">‹</button>
+  <figure class="lightbox__figure">
+    <img src="" alt="" id="lightboxImg">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Immagine successiva">›</button>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
