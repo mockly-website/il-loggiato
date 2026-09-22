@@ -1,5 +1,5 @@
 /* ============================================================
-   COCCO & DESSÌ — il sito come un film · interazioni
+   RISTORANTE IL LOGGIATO — il sito come un film · interazioni
    ============================================================ */
 (function () {
   "use strict";
@@ -308,7 +308,7 @@
       return;
     }
 
-    feedback.textContent = "Grazie! La vostra richiesta è stata registrata. Per una conferma immediata chiamate il +39 0783 252648.";
+    feedback.textContent = "Grazie! La vostra richiesta è stata registrata. Per una conferma immediata chiamate il +39 0783 666666.";
     feedback.className = "form-feedback is-ok";
     form.reset();
   });
