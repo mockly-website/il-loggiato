@@ -152,7 +152,7 @@
 
   /* ---------- Esploratore vini (tab) ---------- */
   var wineTabs = Array.prototype.slice.call(document.querySelectorAll(".wine-tab"));
-  function selectWineTab(tab) {
+  function selectWineTab(tab, noFocus) {
     wineTabs.forEach(function (t) {
       var active = t === tab;
       t.classList.toggle("is-active", active);
@@ -170,7 +170,7 @@
         }
       }
     });
-    tab.focus();
+    if (!noFocus) tab.focus();
   }
   wineTabs.forEach(function (tab, i) {
     tab.addEventListener("click", function () {
@@ -192,7 +192,7 @@
       }
     });
   });
-  selectWineTab(wineTabs[0]);
+  if (wineTabs.length) selectWineTab(wineTabs[0], true);
 
   /* ---------- Galleria: pellicola + lightbox ---------- */
   var galleryItems = Array.prototype.slice.call(document.querySelectorAll(".film__item img"));
@@ -328,5 +328,4 @@
   document.getElementById("anno").textContent = new Date().getFullYear();
 
   onScroll();
-  applyBands();
 })();

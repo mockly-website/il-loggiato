@@ -1,0 +1,31 @@
+/* Ritocchi di leggibilità (revisione Mockly, novembre 2026).
+   L'oro su pergamena era troppo chiaro per i testi: per le scritte
+   usiamo un oro più scuro; i fondi oro restano quelli di prima. */
+:root { --gold-text: #7e5a2a; --gold-text-soft: #8a6430; --muted-dark: #7a6a50; }
+.eyebrow, .btn--ghost, .wine-cantina, .slider__author, .carte__head:hover .carte__num,
+.carte__item.is-open .carte__num, .marquee__track i, .dish-list__block span,
+.info-list h3 { color: var(--gold-text); }
+.section__title em, .dish-list__block strong, .info-list strong,
+.carte__head:hover .carte__name, .wine-tab:hover, .dish-list li:hover .dish-list__name { color: var(--gold-text-soft); }
+.btn--ghost { border-color: var(--gold-text); }
+
+/* Hero: più scuro in alto (menu) e su telefono, dove il testo occupa tutta la larghezza */
+.hero__scrim {
+  background:
+    linear-gradient(to bottom, rgba(20, 11, 7, 0.7) 0%, transparent 22%),
+    radial-gradient(ellipse at 68% 38%, rgba(20, 11, 7, 0.3), rgba(20, 11, 7, 0.88)),
+    linear-gradient(to right, rgba(20, 11, 7, 0.9) 0%, rgba(20, 11, 7, 0.5) 55%, rgba(20, 11, 7, 0.6) 100%),
+    linear-gradient(to top, var(--bg) 0%, transparent 30%);
+}
+.hero__lead { opacity: 1; color: #f1e7d3; }
+@media (max-width: 760px) {
+  .hero__scrim { background: linear-gradient(rgba(20,11,7,.78), rgba(20,11,7,.72)), linear-gradient(to top, var(--bg) 0%, transparent 30%); }
+  .btn { font-size: 0.9rem; padding-block: 1rem; }
+}
+
+/* Punti da toccare più grandi: link del piè di pagina e contatti */
+.footer a, .info-list a, .link-phone { display: inline-block; padding-block: 0.55rem; }
+
+[hidden] { display: none !important; }
+.hero .btn--ghost { color: #e2c595; border-color: rgba(226, 197, 149, .7); }
+.footer__tag, .footer__col li, .footer__col a, .footer__legal, .footer p { color: #c9b89f; }
